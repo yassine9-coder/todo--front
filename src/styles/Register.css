@@ -1,0 +1,74 @@
+body {
+    display: flex; /* Use flexbox for the body */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default margin */
+    background-color: #f0f0f0; /* Optional: background color for the page */
+}
+
+.register-container {
+    width: 400px; /* Increased container width */
+    padding: 30px; /* Increased padding */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.logo {
+    width: 100px; /* Adjust logo size */
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex; /* Use flexbox for label and input */
+    align-items: center; /* Center align items vertically */
+    margin: 10px 0; /* Space between groups */
+}
+
+label {
+    width: 40%; /* Set width for labels */
+    text-align: right; /* Align text to the right */
+    margin-right: 10px; /* Space between label and input */
+}
+
+input {
+    width: 60%; /* Set width to 60% of the container */
+    padding: 5px; /* Reduce padding */
+    border: 1px solid #ccc;
+    border-radius: 4px; /* Rounded corners for inputs */
+    font-size: 14px; /* Adjust font size */
+}
+
+.register-button {
+    background-color: blue; /* Button color */
+    color: white;
+    padding: 8px; /* Adjust button padding */
+    border: none;
+    border-radius: 20px; /* Rounded corners for button */
+    cursor: pointer;
+    width: 50%; /* Button width */
+}
+
+.register-button:hover {
+    background-color: darkblue; /* Button hover effect */
+}
+
+.signin-link {
+    color: blue; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.signin-link:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.error-message {
+    color: red;
+}
+
+.success-message {
+    color: green;
+}

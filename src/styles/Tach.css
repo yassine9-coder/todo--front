@@ -1,0 +1,177 @@
+/* Tach.css */
+
+/* General styles */
+.task-container {
+    width: 700px; 
+    padding: 30px; 
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Title styles */
+.task-title {
+    font-size: 2.5rem; /* Increase font size */
+    text-align: center; /* Center text */
+    margin-bottom: 20px; /* Space below the title */
+}
+
+/* Button styles */
+.add-button {
+    display: block; /* Center the button */
+    margin: 0 auto 20px; /* Add space below */
+    padding: 15px 30px; /* Increase padding for a larger button */
+    margin-right: 10px; /* Corrected property name */
+    background-color: #007bff; /* Primary button color */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+}
+
+.edit-button, .delete-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+  
+.edit-button i {
+    color: #2196f3;
+}
+  
+.delete-button i {
+    color: #f44336;
+}
+
+/* Modal styles */
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Add shadow for better visibility */
+    border-radius: 8px; /* Add rounded corners */
+    z-index: 1000;
+    width: 400px; /* Set a specific width for the modal */
+    max-width: 90%; /* Responsive width */
+}
+
+/* Close button styles */
+.close-button {
+    cursor: pointer;
+    background: none; /* Remove background */
+    border: none; /* Remove border */
+    font-size: 1.5rem; /* Larger font size for better visibility */
+    color: #f44336; /* Red color for the close button */
+    position: absolute; /* Position absolute to place it in the corner */
+    top: 10px; /* Position from the top */
+    right: 10px; /* Position from the right */
+}
+
+/* Backdrop styles */
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    z-index: 999; /* Just below the modal */
+}
+
+/* Ensure content within modal is styled */
+.modal-content {
+    margin-top: 20px; /* Space above content */
+}
+
+.task-table {
+    width: 700px; 
+    padding: 30px; 
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Task item styles */
+.task-list {
+    margin-top: 20px; /* Space above the task list */
+}
+.submit-button{
+    display: block; /* Center the button */
+    margin: 0 auto 20px; /* Add space below */
+    padding: 15px 30px; /* Increase padding for a larger button */
+    margin-right: 10px; /* Corrected property name */
+    background-color: #007bff; /* Primary button color */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+
+}
+.task-form {
+    display: flex; 
+    flex-direction: column; /* Aligne les éléments en colonne pour un formulaire vertical */
+    align-items: flex-end; /* Aligne les éléments à droite */
+    margin: 10px 0; 
+    text-align: right; /* Alignement du texte à droite */
+    padding: 10px; /* Augmente le padding pour un meilleur espacement */
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Augmente les coins arrondis */
+    font-size: 16px; /* Ajuste la taille de police pour une meilleure lisibilité */
+    background-color: #f9f9f9; /* Ajoute une couleur de fond pour le formulaire */
+}
+
+.task-form input, .task-form textarea { /* Cible les champs de saisie et les zones de texte */
+    width: 100%; /* Assure que les champs remplissent tout l'espace disponible */
+    padding: 3px; /* Ajoute du rembourrage aux champs */
+    margin-top: 5px; /* Espace entre les champs */
+    border: 1px solid #ccc; 
+    border-radius: 4px; /* Coins arrondis pour les champs */
+    font-size: 14px; /* Taille de police pour les champs */
+}
+
+.task-form button {
+    margin-top: 10px; /* Espace au-dessus du bouton */
+    padding: 8px 12px; /* Rembourrage pour le bouton */
+    background-color: #007bff; /* Couleur de fond du bouton */
+    color: white; /* Couleur du texte du bouton */
+    border: none; /* Pas de bordure */
+    border-radius: 4px; /* Coins arrondis pour le bouton */
+    cursor: pointer; /* Changer le curseur pour indiquer que c'est cliquable */
+}
+
+.task-form button:hover {
+    background-color: #0056b3; /* Couleur au survol du bouton */
+}
+
+.task-item {
+    display: flex; /* Flexbox for alignment */
+    justify-content: space-between; /* Space between elements */
+    align-items: center; /* Center align items */
+    padding: 30px; /* Increased padding around each task */
+    border: 3px solid #007bff; /* Thicker border around tasks */
+    border-radius: 10px; /* More rounded corners */
+    margin-bottom: 15px; /* Space below each task */
+    background-color: #ffffff; /* Task background */
+    transition: background-color 0.3s; /* Smooth background change */
+    font-size: 1.2em; /* Increased font size for better readability */
+}
+
+/* Task completion style */
+.task-completed {
+    text-decoration: line-through; /* Line through completed tasks */
+}
+
+/* Button styles for edit/delete */
+.task-actions {
+    display: flex; /* Flex for alignment */
+    gap: 15px; /* Increased space between buttons */
+}
